@@ -43,13 +43,10 @@
 </body>
 <script>
 	function makeNewDiv() {
-		/* make the div and its text */
 		let element = document.createElement("div")
 		let input = document.getElementById("inputElement")
 		element.innerHTML = input.value
 		element.className = "stack"
-
-		/* add it to the container */
 		document.getElementById('target').appendChild(element)
 	}
 	function popItem() {
